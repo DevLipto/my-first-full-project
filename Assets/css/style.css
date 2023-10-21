@@ -1,0 +1,698 @@
+/** Global -Area Css **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Preloader section Start */
+
+/* Preloader Styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* You can adjust the background color and opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loadingio-spinner-blocks-bqgvxw8sn2e {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: #f1f2f3; /* Background color for the preloader */
+  }
+  
+  .ldio-qtgb10w7qin {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+  }
+  
+  .ldio-qtgb10w7qin div {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #42a610; /* Color of the animated blocks */
+    animation: ldio-qtgb10w7qin 1s linear infinite;
+  }
+  
+  @keyframes ldio-qtgb10w7qin {
+    0% { background: #1753df }
+    12.5% { background: #1753df }
+    12.625% { background: #42a610 }
+    100% { background: #42a610 }
+  }
+  /* End Preloader Styles */
+  
+  
+  
+  /* Preloader section End */
+
+
+/** Header -Area Css **/
+header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(14, 231, 50);
+    padding: 0 50px;
+    z-index: 999;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left nav {
+    margin: 10px 20px;
+}
+
+header .header-left .logo {
+    width: 140px;
+    height: 40px;
+}
+
+header .header-left ul {
+    display: flex;
+    align-items: center;
+}
+
+header .header-left ul a {
+    margin-top: 15px;
+    display: block;
+    color: rgb(7, 10, 10);
+    font-size: 15px;
+    padding: 10px 25px;
+    transition: 0.3s; 
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header .header-left ul a:hover, header .header-left ul a.active {
+    color: red;
+}
+
+.header-left .login-signup {
+    display: none; 
+}
+
+header .header-right{
+    display: flex;
+    align-items: center;
+}
+
+header .header-right .login-signup{
+color: rgb(3, 3, 3);
+font-weight: bold;
+}
+
+header .header-right .login-signup a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 14px;
+
+}
+
+
+/*  Header Responsive */
+
+.hamburger {
+    display: none;
+    cursor: pointer; 
+    margin-left: 20px;
+}
+@media (max-width: 1000px) {
+    header{
+        padding: 0px 10px;
+        z-index: 99;
+
+    }
+    header .login-signup{
+        display: none;
+    }
+
+    .header-left .login-signup {
+        display: block; 
+        margin-top: 10px;
+    }
+    .header-left .login-signup a{
+        color: white; 
+        background-color: red;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .hamburger {
+        display: block; 
+    }
+
+    header .header-left nav{
+        margin: 0px;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        height: fit-content;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.4s;
+        padding: 30px;
+        z-index: 888;
+       
+    }
+
+    header .header-left nav.active{
+        top: 50px;
+    }
+    header .header-left nav ul{
+        display: block;
+    }
+
+    header .header-left nav ul a{
+        color: white;
+        font-size: 13px;
+    }
+
+
+}
+
+/*  Header Responsive end */
+
+
+/*  Hero Slider Start */
+
+#hero .banner_slider .slide {
+    background-image: linear-gradient(rgba(15, 253, 106, 0.432), rgba(245, 68, 68, 0.733)), url("../img/Natural\ 01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+#hero .banner_slider .slide_two{
+    background-image: linear-gradient(rgba(15, 253, 106, 0.432), rgba(245, 68, 68, 0.733)), url("../img/Natural\ 02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+#hero .banner_slider .slide_three{
+    background-image: linear-gradient(rgba(15, 253, 106, 0.432), rgba(245, 68, 68, 0.733)), url("../img/Natural\ 03.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+#hero .banner_slider .slide_four{
+    background-image: linear-gradient(rgba(15, 253, 106, 0.432), rgba(245, 68, 68, 0.733)), url("../img/Natural\ 04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+}
+
+#hero .banner_slider .slide-content{
+
+    color: white;
+    max-width: 650px;
+    padding: 25px 25px 0px 25px;
+    border-style: solid;
+    border-width: 4px 4px 0px 4px;
+    border-color: red;
+
+    
+}
+
+#hero .banner_slider .slide-content p{
+
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+#hero .banner_slider .slide-content h2{
+
+    color: white;
+    font-size: 50px;
+    line-height: 66px;
+    margin: 10px 0px;
+    
+}
+
+#hero .banner_slider .slide-content .btn{
+    
+    text-decoration: none;  
+    margin-top: 15px;     
+    text-transform: uppercase;       
+    color: #ffffff;      
+    font-weight: 700px;       
+    display: inline-block;     
+    transition: 0.3s ease-in-out;
+
+}
+
+#hero .banner_slider .slide-content .btn:hover{
+    
+    background-color: rgb(28, 116, 1);
+    color: rgb(255, 255, 255);
+    outline-color: rgb(255, 255, 255);
+    outline-offset: 5px;    
+}
+
+#hero .banner_slider {
+     padding: 0px;
+}
+
+.banner_slider .slick-dots{
+    width: 100%;
+    bottom: 4%;
+}
+
+.slick-dots li button
+{
+    font-size: 10px;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    background: hsl(117.91deg 80.14% 36.92%);
+}
+a.btn.btn_transparent {
+    color: white;
+    background:#f60606;
+    padding:5px 15px;
+    border-radius: 3px;
+}
+
+a.btn {
+    color: white;
+    background:#f60606;
+    padding:5px 15px;
+    border-radius: 3px;
+}
+li.slick-active button {
+    color: rgb(0, 0, 0)!important;
+    background-color: rgb(255, 255, 255);
+}
+
+.banner_slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    display: block;
+    z-index: 11;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.banner_slider .slick-arrow.prev{
+left: 10px;
+}
+
+.banner_slider .slick-arrow.next{
+    right: 10px;
+}
+
+.banner_slider .slick-arrow span{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 8px;
+    transition: 1s;
+}
+
+.banner_slider .slick-arrow span:hover{
+    color: orangered;
+}
+
+
+/* Hero section responsive */
+
+
+@media screen and (max-width: 650px) {
+
+
+    #hero .banner_slider .slide-content h2{
+
+        color: white;
+        font-size: 20px;
+        line-height: 28px;
+        margin: 10px 0px;
+        
+    }
+
+
+    #hero .banner_slider .slide-content p{
+        color: white;
+        font-size: 10px;
+        line-height: 20px;
+        margin: 10px 0px;
+        
+    }
+
+
+    #hero .banner_slider .slide-content .btn{
+    
+        font-size: 10px;
+        padding: 5;
+
+    }
+
+    #hero .banner_slider{
+        padding: 0px;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0px;
+    }
+
+    #hero .banner_slider .slide, #hero .banner_slider .slide_two, #hero .banner_slider .slide_three, #hero .banner_slider .slide_four{
+        padding: 40px;
+    }
+
+    #hero .banner_slider .slide-content{
+
+        color: white;
+        max-width: 650px;
+        margin: 0px 10px;
+        padding: 10px 10px 0px 15px;
+        border-style: solid;
+        border-width: 4px 4px 0px 4px;
+        border-color: red;
+        
+    }
+
+  }
+
+/*  Hero Slider End*/
+
+
+/*  About Section Start*/
+
+/* Container Styles */
+
+.container {
+    margin-top: 20px;
+}
+
+/* Video Thumbnail Styles */
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    max-width: 100%;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #ff0f0f;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+/* About Text Styles */
+.col-lg-6 {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/*  About Section end*/
+
+/*  Gellary Section Start*/
+
+.img-thumbnail{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Add margin and padding for spacing */
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+/* Style the gallery images and links */
+.col-md-4 {
+    padding: 0 15px;
+}
+
+.img-thumbnail {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/*  Gellary Section End*/
+
+
+/* contact section Start */
+
+.text-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Add margin for spacing */
+.container {
+    margin-top: 20px;
+}
+
+/* Style the contact form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style the contact information */
+
+.col-md-6 p {
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contact-info-right{
+
+padding: 30px;
+background-color: #e7e7e7;
+
+}
+
+.contact-info-left{
+
+padding: 30px;
+background-color: #f3f3f3;
+
+}
+
+/* contact section End */
+
+/* Footer section Start */
+
+.site-footer {
+    background-color: #07751a;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-logo {
+    width: 150px;
+}
+.logoArea{
+    padding-right: 0px;
+}
+
+.logoArea p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: left;
+    padding-left: 10px;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0 70px;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links2 ul li{
+    margin-bottom: 10px;
+}
+
+.footer-links2 ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links3 ul li{
+    margin-bottom: 10px;
+}
+
+.footer-links3 ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copywritearea{
+    background-color: #02310a;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: -50px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: white;
+    
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        width: 100px; 
+    }
+
+    .logoArea p {
+        font-size: 12px; 
+    }
+
+    .footer-links ul {
+        padding: 0 20px; 
+    }
+
+    .footer-links2 ul,
+    .footer-links3 ul {
+        padding: 0 20px; 
+    }
+}
+
+/* Responsive styles for even smaller screens */
+
+@media screen and (max-width: 480px) {
+    .footer-logo {
+        width: 80px; 
+    }
+
+    .logoArea p {
+        font-size: 10px; 
+    }
+}
+
+/* Footer section End */
+
+
+
+
+
+
+
+
+
+
+
+
