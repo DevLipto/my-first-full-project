@@ -685,7 +685,28 @@ background-color: #f3f3f3;
 
 /* Footer section End */
 
+/** Scroll to top section Start **/
 
+
+
+#scrolltotop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/** Scroll to top section End **/
 
 
 
